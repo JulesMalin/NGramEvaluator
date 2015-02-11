@@ -63,8 +63,12 @@ for (n in 1:maxN) {
 }
 
 # Calculate ngram frequencies
-print("#######")
+sink("frequencies.txt",append=TRUE,split=FALSE)
+print("####### NGRAM FREQUENCIES ######")
+ngramNames <- names(ngramArr)
+ngramCount <- 0
 for (gram in ngramArr){
-	print(gram)
-	readline()
+	print(paste0(ngramNames[ngramCount],":",gram))
+	ngramCount <- ngramCount + 1
 }
+sink()
