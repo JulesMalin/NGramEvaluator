@@ -33,21 +33,23 @@ for (row in mydata){
 	print(cleanRow)
 }
 
-# Calculate number of words per line
-
 # Calculate ngram frequencies
-maxN = 2 # n number of ngram strings. 
+maxN = as.numeric(readline("input n:")) # n number of ngram strings. 
 for (n in 1:maxN) {
+	sink("output.txt",append=TRUE,split=FALSE) # direct stdout to output.txt	
+	print(paste0("##### ngrams for n=",n," #####"))
+	sink() # return to stdout
 	for (row in mydata){
-		cat("ngrams for current n = ",n,"\n\n")
 		rowInfo <- cleanStr(as.character(row))
 		rowStr <- rowInfo[1]
 		rowWordCount <- rowInfo[2]
 		if (maxN > rowWordCount){
-			print("Not enough words for ngram. Finding next ngram.\n")
+			print("Not enough words for ngram. Finding next ngram.")
 			next
 		}
 		ng <- ngram(rowStr,n)
+		sink("output.txt",append=TRUE,split=FALSE)
 		print(ng,full=TRUE)
+		sink()
 	}
 }

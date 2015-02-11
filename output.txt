@@ -1,0 +1,553 @@
+[1] "##### ngrams for n=1 #####"
+You've 
+visited {1} | 
+
+times. 
+Last {1} | 
+
+this 
+page {1} | 
+
+2 
+times. {1} | 
+
+page 
+2 {1} | 
+
+Last 
+visit: {1} | 
+
+1/26/15 
+NULL {1} | 
+
+visited 
+this {1} | 
+
+visit: 
+1/26/15 {1} | 
+
+corpora 
+NULL {1} | 
+
+in 
+R {1} | 
+
+and 
+comparing {1} | 
+
+across 
+corpora {1} | 
+
+comparing 
+ngrams {1} | 
+
+ngrams 
+in {1} | across {1} | 
+
+R 
+and {1} | 
+
+Finding 
+ngrams {1} | 
+
+Based 
+Text {1} | 
+
+[PDF]The 
+textcat {1} | 
+
+n-Gram 
+Based {1} | 
+
+Text 
+Categorization {1} | 
+
+for 
+n-Gram {1} | 
+
+Categorization 
+... {1} | 
+
+Package 
+for {1} | 
+
+... 
+NULL {1} | 
+
+textcat 
+Package {1} | 
+
+of 
+Statistical {1} | 
+
+Software 
+NULL {1} | 
+
+Journal 
+of {1} | 
+
+Statistical 
+Software {1} | 
+
+You've 
+visited {1} | 
+
+times. 
+Last {1} | 
+
+this 
+page {1} | 
+
+2 
+times. {1} | 
+
+page 
+2 {1} | 
+
+Last 
+visit: {1} | 
+
+1/26/15 
+NULL {1} | 
+
+visited 
+this {1} | 
+
+visit: 
+1/26/15 {1} | 
+
+You 
+visited {1} | 
+
+on 
+1/26/15. {1} | 
+
+this 
+page {1} | 
+
+page 
+on {1} | 
+
+visited 
+this {1} | 
+
+1/26/15. 
+NULL {1} | 
+
+Shiffman 
+NULL {1} | 
+
+N-Grams 
+and {1} | 
+
+- 
+Daniel {1} | 
+
+and 
+Markov {1} | 
+
+Daniel 
+Shiffman {1} | 
+
+Chains 
+- {1} | 
+
+Markov 
+Chains {1} | 
+
+- 
+Frequently {1} | 
+
+Asked 
+Questions {1} | 
+
+Frequently 
+Asked {1} | 
+
+tm 
+- {1} | 
+
+Questions 
+NULL {1} | 
+
+[1] "##### ngrams for n=2 #####"
+visited this 
+page {1} | 
+
+page 2 
+times. {1} | 
+
+visit: 1/26/15 
+NULL {1} | 
+
+this page 
+2 {1} | 
+
+times. Last 
+visit: {1} | 
+
+2 times. 
+Last {1} | 
+
+You've visited 
+this {1} | 
+
+Last visit: 
+1/26/15 {1} | 
+
+in R 
+and {1} | 
+
+comparing ngrams 
+across {1} | 
+
+across corpora 
+NULL {1} | 
+
+Finding ngrams 
+in {1} | 
+
+ngrams across 
+corpora {1} | 
+
+ngrams in 
+R {1} | 
+
+R and 
+comparing {1} | 
+
+and comparing 
+ngrams {1} | 
+
+n-Gram Based 
+Text {1} | 
+
+Categorization ... 
+NULL {1} | 
+
+Package for 
+n-Gram {1} | 
+
+Based Text 
+Categorization {1} | 
+
+textcat Package 
+for {1} | 
+
+[PDF]The textcat 
+Package {1} | 
+
+Text Categorization 
+... {1} | 
+
+for n-Gram 
+Based {1} | 
+
+of Statistical 
+Software {1} | 
+
+Journal of 
+Statistical {1} | 
+
+Statistical Software 
+NULL {1} | 
+
+visited this 
+page {1} | 
+
+page 2 
+times. {1} | 
+
+visit: 1/26/15 
+NULL {1} | 
+
+this page 
+2 {1} | 
+
+times. Last 
+visit: {1} | 
+
+2 times. 
+Last {1} | 
+
+You've visited 
+this {1} | 
+
+Last visit: 
+1/26/15 {1} | 
+
+You visited 
+this {1} | 
+
+on 1/26/15. 
+NULL {1} | 
+
+visited this 
+page {1} | 
+
+this page 
+on {1} | 
+
+page on 
+1/26/15. {1} | 
+
+Daniel Shiffman 
+NULL {1} | 
+
+N-Grams and 
+Markov {1} | 
+
+- Daniel 
+Shiffman {1} | 
+
+Chains - 
+Daniel {1} | 
+
+and Markov 
+Chains {1} | 
+
+Markov Chains 
+- {1} | 
+
+Asked Questions 
+NULL {1} | 
+
+- Frequently 
+Asked {1} | 
+
+Frequently Asked 
+Questions {1} | 
+
+tm - 
+Frequently {1} | 
+
+[1] "##### ngrams for n=3 #####"
+You've visited this 
+page {1} | 
+
+page 2 times. 
+Last {1} | 
+
+this page 2 
+times. {1} | 
+
+2 times. Last 
+visit: {1} | 
+
+visited this page 
+2 {1} | 
+
+Last visit: 1/26/15 
+NULL {1} | 
+
+times. Last visit: 
+1/26/15 {1} | 
+
+Finding ngrams in 
+R {1} | 
+
+R and comparing 
+ngrams {1} | 
+
+in R and 
+comparing {1} | 
+
+ngrams across corpora 
+NULL {1} | 
+
+ngrams in R 
+and {1} | 
+
+comparing ngrams across 
+corpora {1} | 
+
+and comparing ngrams 
+across {1} | 
+
+n-Gram Based Text 
+Categorization {1} | 
+
+Package for n-Gram 
+Based {1} | 
+
+for n-Gram Based 
+Text {1} | 
+
+Text Categorization ... 
+NULL {1} | 
+
+[PDF]The textcat Package 
+for {1} | 
+
+textcat Package for 
+n-Gram {1} | 
+
+Based Text Categorization 
+... {1} | 
+
+of Statistical Software 
+NULL {1} | 
+
+Journal of Statistical 
+Software {1} | 
+
+You've visited this 
+page {1} | 
+
+page 2 times. 
+Last {1} | 
+
+this page 2 
+times. {1} | 
+
+2 times. Last 
+visit: {1} | 
+
+visited this page 
+2 {1} | 
+
+Last visit: 1/26/15 
+NULL {1} | 
+
+times. Last visit: 
+1/26/15 {1} | 
+
+You visited this 
+page {1} | 
+
+this page on 
+1/26/15. {1} | 
+
+visited this page 
+on {1} | 
+
+page on 1/26/15. 
+NULL {1} | 
+
+and Markov Chains 
+- {1} | 
+
+N-Grams and Markov 
+Chains {1} | 
+
+Markov Chains - 
+Daniel {1} | 
+
+- Daniel Shiffman 
+NULL {1} | 
+
+Chains - Daniel 
+Shiffman {1} | 
+
+- Frequently Asked 
+Questions {1} | 
+
+tm - Frequently 
+Asked {1} | 
+
+Frequently Asked Questions 
+NULL {1} | 
+
+[1] "##### ngrams for n=4 #####"
+You've visited this page 
+2 {1} | 
+
+this page 2 times. 
+Last {1} | 
+
+times. Last visit: 1/26/15 
+NULL {1} | 
+
+page 2 times. Last 
+visit: {1} | 
+
+2 times. Last visit: 
+1/26/15 {1} | 
+
+visited this page 2 
+times. {1} | 
+
+ngrams in R and 
+comparing {1} | 
+
+Finding ngrams in R 
+and {1} | 
+
+comparing ngrams across corpora 
+NULL {1} | 
+
+and comparing ngrams across 
+corpora {1} | 
+
+in R and comparing 
+ngrams {1} | 
+
+R and comparing ngrams 
+across {1} | 
+
+for n-Gram Based Text 
+Categorization {1} | 
+
+Based Text Categorization ... 
+NULL {1} | 
+
+[PDF]The textcat Package for 
+n-Gram {1} | 
+
+n-Gram Based Text Categorization 
+... {1} | 
+
+textcat Package for n-Gram 
+Based {1} | 
+
+Package for n-Gram Based 
+Text {1} | 
+
+Journal of Statistical Software 
+NULL {1} | 
+
+You've visited this page 
+2 {1} | 
+
+this page 2 times. 
+Last {1} | 
+
+times. Last visit: 1/26/15 
+NULL {1} | 
+
+page 2 times. Last 
+visit: {1} | 
+
+2 times. Last visit: 
+1/26/15 {1} | 
+
+visited this page 2 
+times. {1} | 
+
+this page on 1/26/15. 
+NULL {1} | 
+
+visited this page on 
+1/26/15. {1} | 
+
+You visited this page 
+on {1} | 
+
+Chains - Daniel Shiffman 
+NULL {1} | 
+
+and Markov Chains - 
+Daniel {1} | 
+
+N-Grams and Markov Chains 
+- {1} | 
+
+Markov Chains - Daniel 
+Shiffman {1} | 
+
+- Frequently Asked Questions 
+NULL {1} | 
+
+tm - Frequently Asked 
+Questions {1} | 
+
