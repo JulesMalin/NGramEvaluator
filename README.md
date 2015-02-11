@@ -1,3 +1,3 @@
 # NGramEvaluator
-Finds every possible ngram in each row of input_text.csv data from 1 to n.
-NGramEvaluator calculates frequencies for each ngram and stores them into output.txt.
+Finds every possible ngram from 1 to n in each row of input data.
+NGramEvaluator calculates frequencies for each ngram found.
