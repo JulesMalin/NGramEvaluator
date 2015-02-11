@@ -68,7 +68,7 @@ print("####### NGRAM FREQUENCIES ######")
 ngramNames <- names(ngramArr)
 ngramCount <- 0
 for (gram in ngramArr){
-	print(paste0(ngramNames[ngramCount],":",gram))
+	print(paste0(ngramNames[ngramCount]," ",gram))
 	ngramCount <- ngramCount + 1
 }
 sink()
