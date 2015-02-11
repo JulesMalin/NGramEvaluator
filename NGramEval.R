@@ -33,8 +33,9 @@ for (row in mydata){
 	print(cleanRow)
 }
 
-# Calculate ngram frequencies
+# Store raw ngram output to output.txt
 maxN = as.numeric(readline("input n:")) # n number of ngram strings. 
+ngramArr <- list()
 for (n in 1:maxN) {
 	sink("output.txt",append=TRUE,split=FALSE) # direct stdout to output.txt	
 	print(paste0("##### ngrams for n=",n," #####"))
@@ -48,8 +49,22 @@ for (n in 1:maxN) {
 			next
 		}
 		ng <- ngram(rowStr,n)
+		grams <- get.ngrams(ng)
+		for (gram in grams){
+			if (!isTRUE(ngramArr$gram)){
+				ngramArr[[gram]] <- 0
+			}
+			ngramArr[[gram]] <- ngramArr[[gram]] + 1
+		}
 		sink("output.txt",append=TRUE,split=FALSE)
 		print(ng,full=TRUE)
 		sink()
 	}
+}
+
+# Calculate ngram frequencies
+print("#######")
+for (gram in ngramArr){
+	print(gram)
+	readline()
 }
