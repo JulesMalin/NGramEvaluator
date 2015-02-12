@@ -49,13 +49,6 @@ for (n in 1:maxN) {
 			next
 		}
 		ng <- ngram(rowStr,n)
-		grams <- get.ngrams(ng)
-		for (gram in grams){
-			if (!isTRUE(ngramArr$gram)){
-				ngramArr[[gram]] <- 0
-			}
-			ngramArr[[gram]] <- ngramArr[[gram]] + 1
-		}
 		sink("output.txt",append=TRUE,split=FALSE)
 		print(ng,full=TRUE)
 		sink()
@@ -65,7 +58,7 @@ for (n in 1:maxN) {
 # Calculate ngram frequencies
 sink("frequencies.txt",append=TRUE,split=FALSE)
 print("####### NGRAM FREQUENCIES ######")
-ngramNames <- names(ngramArr)
+
 ngramCount <- 0
 for (gram in ngramArr){
 	print(paste0(ngramNames[ngramCount]," ",gram))
