@@ -33,6 +33,27 @@ for (row in mydata){
 	print(cleanRow)
 }
 
+getNGrams <- function(sentence,n){
+	words <- unlist(strsplit(sentence," "))
+	ngramList <- list()
+	currIndex <- 1
+	for (word in words){
+		ngramStr <- ""
+		for (i in currIndex:n){
+			ngramStr <- paste(ngramStr,words[i])
+			print(words[i])
+		}
+		if (!isTRUE(ngramList[[ngramStr]])){
+			ngramList[[ngramStr]] <- 0
+		}
+		else{
+			ngramList[[ngramStr]] <- as.numeric(ngramList[[ngramStr]]) + 1
+		}
+		currIndex <- currIndex + 1
+	}
+	return(ngramList)
+}
+
 # Store raw ngram output to output.txt
 maxN = as.numeric(readline("input n:")) # n number of ngram strings. 
 ngramArr <- list()
