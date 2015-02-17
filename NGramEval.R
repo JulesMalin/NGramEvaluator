@@ -3,7 +3,7 @@
 # @TODO: Remove punctuation with regex
 # @TODO: Make sure each sentence has >= n # of words for specified n 
 
-library(ngram) # load ngram package
+library(qdap) # load qdap with ngram package
 library(gdata) # load gdata package
 
 mydata = read.csv(file.choose(),header=FALSE,sep=",")
@@ -20,69 +20,47 @@ cleanStr <- function(sentence) {
 	wordcount <- length(words)
 	cleanWords <- list()
 	for (word in words){
-		word <- gsub("[^a-zA-Z[0-9]]","",word)
+		word <- gsub("[^a-zA-Z0-9]"," ",word)
+		if (is.na(word)){
+			next
+		}
 		cleanWords <- pushList(word,cleanWords)
 	}
 	clnStr <- paste(cleanWords,collapse=" ") 
 	return(c(clnStr,wordcount))	
 }
 
+maxN = as.numeric(readline("input n:")) # n number of ngram strings. 
+allNGrams <- list()
 for (row in mydata){	
 	rowStr <- as.character(row)
 	cleanRow <- cleanStr(rowStr)
-	print(cleanRow)
+	grams <- unlist(ngrams(text.var=cleanRow,grouping.var=NULL,n=maxN)[1])	
+	for (gram in grams){
+		allNGrams <- pushList(gram,ngramArr)
+	}	
 }
 
-getNGrams <- function(sentence,n){
-	words <- unlist(strsplit(sentence," "))
-	ngramList <- list()
-	currIndex <- 1
-	for (word in words){
-		ngramStr <- ""
-		for (i in currIndex:n){
-			ngramStr <- paste(ngramStr,words[i])
-			print(words[i])
-		}
-		if (!isTRUE(ngramList[[ngramStr]])){
-			ngramList[[ngramStr]] <- 0
+nGramFrequencies <- list()
+for (ngram in ngramArr){
+	if (!grepl("NA",ngram) && !(ngram=="") && !(ngram==" ")){
+		if (is.null(nGramFrequencies[[ngram]])){
+			nGramFrequencies[[ngram]] <- 1
 		}
 		else{
-			ngramList[[ngramStr]] <- as.numeric(ngramList[[ngramStr]]) + 1
+			nGramFrequencies[[ngram]] <- nGramFrequencies[[ngram]] + 1
 		}
-		currIndex <- currIndex + 1
-	}
-	return(ngramList)
-}
-
-# Store raw ngram output to output.txt
-maxN = as.numeric(readline("input n:")) # n number of ngram strings. 
-ngramArr <- list()
-for (n in 1:maxN) {
-	sink("output.txt",append=TRUE,split=FALSE) # direct stdout to output.txt	
-	print(paste0("##### ngrams for n=",n," #####"))
-	sink() # return to stdout
-	for (row in mydata){
-		rowInfo <- cleanStr(as.character(row))
-		rowStr <- rowInfo[1]
-		rowWordCount <- rowInfo[2]
-		if (maxN > rowWordCount){
-			print("Not enough words for ngram. Finding next ngram.")
-			next
-		}
-		ng <- ngram(rowStr,n)
-		sink("output.txt",append=TRUE,split=FALSE)
-		print(ng,full=TRUE)
-		sink()
 	}
 }
 
-# Calculate ngram frequencies
-sink("frequencies.txt",append=TRUE,split=FALSE)
-print("####### NGRAM FREQUENCIES ######")
-
-ngramCount <- 0
-for (gram in ngramArr){
-	print(paste0(ngramNames[ngramCount]," ",gram))
-	ngramCount <- ngramCount + 1
+# output frequencies to frequencies.csv
+nGramNameVector <- names(nGramFrequencies)
+nGramFreqVector <- vector()
+for (freq in nGramFrequencies){
+	nGramFreqVector <- c(nGramFreqVector,freq)
 }
-sink()
+nGramDataFrame <- data.frame(nGramNameVector,nGramFreqVector)
+print(nGramDataFrame)
+write.table(nGramDataFrame, file = "frequencies.csv", sep = ",", col.names = NA)
+
+

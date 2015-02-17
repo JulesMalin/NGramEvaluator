@@ -1,0 +1,170 @@
+"","nGramNameVector","nGramFreqVector"
+"1","r",13
+"2","what",3
+"3","algorithm",2
+"4","i",3
+"5","need",2
+"6","to",3
+"7","find",2
+"8","n",5
+"9","grams",3
+"10","stack",1
+"11","overflow",1
+"12","r what",1
+"13","what algorithm",2
+"14","algorithm i",2
+"15","i need",2
+"16","need to",2
+"17","to find",2
+"18","find n",2
+"19","n grams",3
+"20","grams stack",1
+"21","stack overflow",1
+"22","stackoverflow",2
+"23","com",3
+"24","questions",2
+"25","stackoverflow com",2
+"26","com questions",1
+"27","questions what",1
+"28","na",33
+"29","you",3
+"30","ve",2
+"31","visited",3
+"32","this",3
+"33","page",3
+"34","times",2
+"35","last",2
+"36","visit",2
+"37","you ve",2
+"38","ve visited",2
+"39","visited this",3
+"40","this page",3
+"41","page times",2
+"42","times last",2
+"43","last visit",2
+"44","finding",2
+"45","ngrams",5
+"46","in",3
+"47","and",3
+"48","comparing",2
+"49","across",1
+"50","corpora",1
+"51","finding ngrams",2
+"52","ngrams in",2
+"53","in r",3
+"54","r and",2
+"55","and comparing",2
+"56","comparing ngrams",2
+"57","ngrams across",1
+"58","across corpora",1
+"59","acros",1
+"60","com finding",1
+"61","ngrams acros",1
+"62","pdf",3
+"63","the",2
+"64","textcat",1
+"65","package",3
+"66","for",2
+"67","gram",2
+"68","based",1
+"69","text",1
+"70","categorization",1
+"71","pdf the",1
+"72","the textcat",1
+"73","textcat package",1
+"74","package for",2
+"75","for n",1
+"76","n gram",2
+"77","gram based",1
+"78","based text",1
+"79","text categorization",1
+"80","www",2
+"81","jstatsoft",1
+"82","org",3
+"83","v",1
+"84","paper",1
+"85","www jstatsoft",1
+"86","jstatsoft org",1
+"87","org v",1
+"88","v i",1
+"89","i paper",1
+"90","of",1
+"91","statistical",1
+"92","software",1
+"93","of statistical",1
+"94","statistical software",1
+"95","bloggers",2
+"96","ngramr",4
+"97","an",1
+"98","google",1
+"99","www r",1
+"100","r bloggers",2
+"101","bloggers com",1
+"102","com ngramr",1
+"103","ngramr an",1
+"104","an r",1
+"105","r package",1
+"106","for google",1
+"107","google ngrams",1
+"108","on",1
+"109","you visited",1
+"110","page on",1
+"111","markov",1
+"112","chains",1
+"113","daniel",1
+"114","shiffman",2
+"115","grams and",1
+"116","and markov",1
+"117","markov chains",1
+"118","chains daniel",1
+"119","daniel shiffman",1
+"120","net",1
+"121","teaching",1
+"122","az",1
+"123","generate",1
+"124","shiffman net",1
+"125","net teaching",1
+"126","teaching az",1
+"127","az generate",1
+"128","pdf package",1
+"129","package ngramr",1
+"130","cran",1
+"131","project",2
+"132","web",1
+"133","packages",1
+"134","cran r",1
+"135","r project",2
+"136","project org",2
+"137","org web",1
+"138","web packages",1
+"139","packages ngramr",1
+"140","ngramr ngramr",1
+"141","ngramr pdf",1
+"142","tm",2
+"143","frequently",1
+"144","asked",1
+"145","tm frequently",1
+"146","frequently asked",1
+"147","asked questions",1
+"148","forge",1
+"149","faq",1
+"150","html",1
+"151","tm r",1
+"152","r forge",1
+"153","forge r",1
+"154","org faq",1
+"155","faq html",1
+"156","is",1
+"157","best",1
+"158","way",1
+"159","do",1
+"160","quora",4
+"161","what is",1
+"162","is the",1
+"163","the best",1
+"164","best way",1
+"165","way to",1
+"166","to do",1
+"167","do n",1
+"168","gram in",1
+"169","r quora",1
