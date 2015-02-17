@@ -35,14 +35,14 @@ allNGrams <- list()
 for (row in mydata){	
 	rowStr <- as.character(row)
 	cleanRow <- cleanStr(rowStr)
-	grams <- unlist(ngrams(text.var=cleanRow,grouping.var=NULL,n=maxN)[1])	
+	grams <- unlist(ngrams(cleanRow,n=maxN)[1])	
 	for (gram in grams){
-		allNGrams <- pushList(gram,ngramArr)
+		allNGrams <- pushList(gram,allNGrams)
 	}	
 }
 
 nGramFrequencies <- list()
-for (ngram in ngramArr){
+for (ngram in allNGrams){
 	if (!grepl("NA",ngram) && !(ngram=="") && !(ngram==" ")){
 		if (is.null(nGramFrequencies[[ngram]])){
 			nGramFrequencies[[ngram]] <- 1
@@ -60,7 +60,6 @@ for (freq in nGramFrequencies){
 	nGramFreqVector <- c(nGramFreqVector,freq)
 }
 nGramDataFrame <- data.frame(nGramNameVector,nGramFreqVector)
-print(nGramDataFrame)
 write.table(nGramDataFrame, file = "frequencies.csv", sep = ",", col.names = NA)
 
 
