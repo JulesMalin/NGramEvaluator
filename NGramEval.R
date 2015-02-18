@@ -29,8 +29,10 @@ cleanStr <- function(sentence) {
 	clnStr <- paste(cleanWords,collapse=" ") 
 	return(c(clnStr,wordcount))	
 }
-#r <- scan(what=character(), nlines=1)
-maxN = as.numeric(3) # n number of ngram strings. 
+
+#### JULES, CHANGE THIS VALUE FOR ANY N ####
+maxN = 5 	# n number of ngram strings. 
+#### JULES, CHANGE THIS VALUE FOR ANY N ####
 allNGrams <- list()
 for (row in mydata){	
 	rowStr <- as.character(row)
@@ -62,3 +64,4 @@ fileDirStr <- choose.dir(getwd(), "Choose a suitable folder")
 fileDirStr <- gsub("\\\\","/",fileDirStr)
 fileDirStr <- paste(list(fileDirStr,"/frequencies.csv"),collapse = "")
 write.table(nGramDataFrame, file = fileDirStr, sep = ",", col.names = NA)
+
