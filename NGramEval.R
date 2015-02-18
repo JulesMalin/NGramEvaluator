@@ -5,6 +5,7 @@
 
 library(qdap) # load qdap with ngram package
 library(gdata) # load gdata package
+library(utils) # load utils package to have inte3ractive gui
 
 mydata = read.csv(file.choose(),header=FALSE,sep=",")
 
@@ -13,7 +14,6 @@ pushList <- function(el, ls) {
 	ls[length(ls)+1] <- el
 	return(ls)
 }
-
 # Remove all not non-words and non-chars using regex
 cleanStr <- function(sentence) {
 	words <- unlist(strsplit(sentence," "))
@@ -29,8 +29,8 @@ cleanStr <- function(sentence) {
 	clnStr <- paste(cleanWords,collapse=" ") 
 	return(c(clnStr,wordcount))	
 }
-
-maxN = as.numeric(readline("input n:")) # n number of ngram strings. 
+#r <- scan(what=character(), nlines=1)
+maxN = as.numeric(3) # n number of ngram strings. 
 allNGrams <- list()
 for (row in mydata){	
 	rowStr <- as.character(row)
@@ -40,7 +40,6 @@ for (row in mydata){
 		allNGrams <- pushList(gram,allNGrams)
 	}	
 }
-
 nGramFrequencies <- list()
 for (ngram in allNGrams){
 	if (!grepl("NA",ngram) && !(ngram=="") && !(ngram==" ")){
@@ -52,7 +51,6 @@ for (ngram in allNGrams){
 		}
 	}
 }
-
 # output frequencies to frequencies.csv
 nGramNameVector <- names(nGramFrequencies)
 nGramFreqVector <- vector()
@@ -60,6 +58,7 @@ for (freq in nGramFrequencies){
 	nGramFreqVector <- c(nGramFreqVector,freq)
 }
 nGramDataFrame <- data.frame(nGramNameVector,nGramFreqVector)
-write.table(nGramDataFrame, file = "frequencies.csv", sep = ",", col.names = NA)
-
-
+fileDirStr <- choose.dir(getwd(), "Choose a suitable folder")
+fileDirStr <- gsub("\\\\","/",fileDirStr)
+fileDirStr <- paste(list(fileDirStr,"/frequencies.csv"),collapse = "")
+write.table(nGramDataFrame, file = fileDirStr, sep = ",", col.names = NA)
